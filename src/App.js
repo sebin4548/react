@@ -5,7 +5,7 @@ function App() {
       <h1>
         welcome back!
 
-        <Button text="sebin"/>
+        <Button text="meee"/>
       </h1>
     </div>
   );
