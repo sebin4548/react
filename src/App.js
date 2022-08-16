@@ -1,14 +1,29 @@
-import Button from "./Button"
-function App() {
-  return (
-    <div>
-      <h1>
-        welcome back!
+import {
+  BrowserRouter as Router,
+  Switch, 
+  Route
+} from "react-router-dom"
+import Home from "./routes/Home"
+import Detail from "./routes/Detail";
 
-        <Button text="meee"/>
-      </h1>
-    </div>
+function App(){
+  return(
+  <Router>
+    <Switch>
+      <Route path="/movie">
+        <Detail />
+      </Route>
+
+      <Route path="/hello">
+        <h1>Hello</h1>
+      </Route>
+
+      <Route path="/">
+        <Home />
+      </Route>
+      
+    </Switch>
+  </Router>
   );
 }
-
 export default App;
